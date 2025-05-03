@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "ASD14 React Ink Config",
+  "extends": "./common.json",
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "nodenext",
+    "target": "esnext",
+    "jsx": "preserve",
+    "lib": ["es2023", "dom"],
+    "types": ["node"]
+  }
+}

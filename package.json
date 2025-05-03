@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@asd14/ts-config",
+  "version": "0.1.0",
+  "description": "ASD14's reusable Typescript configs",
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asd-xiv/ts-config.git"
+  },
+  "files": [
+    "targets"
+  ],
+  "type": "module",
+  "scripts": {
+    "format": "prettier --write targets",
+    "prerelease:local": "[ -f package-lock.json ] || npm install --no-workspaces --package-lock-only",
+    "release:local": "semantic-release --no-ci"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "devDependencies": {
+    "@asd14/prettier-config": "^1.0.1",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.2",
+    "@semantic-release/npm": "^12.0.1",
+    "@semantic-release/release-notes-generator": "^14.0.3",
+    "semantic-release": "^24.2.3"
+  }
+}
