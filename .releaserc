@@ -8,7 +8,7 @@
     [
       "@semantic-release/github",
       {
-        "assets": ["targets/**"]
+        "assets": ["targets"]
       }
     ],
     "@semantic-release/git"
