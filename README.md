@@ -1,3 +1,6 @@
+[![Release](https://github.com/asd-xiv/ts-config/actions/workflows/release.yml/badge.svg?branch=main)](https://github.com/asd-xiv/ts-config/actions/workflows/release.yml)
+[![npm version](https://img.shields.io/npm/v/@asd14/ts-config.svg)](https://www.npmjs.com/package/@asd14/ts-config)
+
 # @asd14/ts-config
 
 > ASD14's reusable TypeScript configurations.
@@ -6,22 +9,20 @@
 
 * [Installation](#installation)
 * [Usage](#usage)
-* [Configuration Details](#configuration-details)
+* [Targets](#targets)
     * [Common Configuration](#common-configuration)
-    * [Node Configuration](#node-configuration)
-    * [React Configuration](#react-configuration)
-    * [Ink Configuration](#ink-configuration)
-* [Peer Dependency](#peer-dependency)
+    * [Node](#node)
+    * [React](#react)
+    * [Ink](#ink)
+* [Peer dependencies](#peer-dependencies)
 * [License](#license)
 
 <!-- vim-markdown-toc -->
 
 ## Installation
 
-Install via npm:
-
 ```sh
-npm install --save-dev @asd14/ts-config
+npm install --save-dev @asd14/ts-config typescript@^5
 ```
 
 ## Usage
@@ -34,16 +35,14 @@ In your `tsconfig.json`, extend the desired configuration:
 }
 ```
 
-Choose from:
+## Targets
 
-- [`@asd14/ts-config/targets/common.json`](/targets/common.json)
-- [`@asd14/ts-config/targets/ink.json`](/targets/ink.json)
-- [`@asd14/ts-config/targets/node.json`](/targets/node.json)
-- [`@asd14/ts-config/targets/react.json`](/targets/react.json)
-
-## Configuration Details
+There are 3 configurations, each tailored for a specific **target environment**:
+`node`, `react` and [`ink`](https://github.com/vadimdemedes/ink).
 
 ### Common Configuration
+
+All 3 targets extend a common set of rules:
 
 ```json
 {
@@ -71,9 +70,10 @@ Choose from:
 }
 ```
 
-### Node Configuration
+### Node
 
 ```json
+// @asd14/ts-config/targets/node.json
 {
   "module": "nodenext",
   "moduleResolution": "nodenext",
@@ -83,9 +83,10 @@ Choose from:
 }
 ```
 
-### React Configuration
+### React
 
 ```json
+// @asd14/ts-config/targets/react.json
 {
   "module": "esnext",
   "moduleResolution": "bundler",
@@ -95,9 +96,10 @@ Choose from:
 }
 ```
 
-### Ink Configuration
+### Ink
 
 ```json
+// @asd14/ts-config/targets/ink.json
 {
   "module": "esnext",
   "moduleResolution": "nodenext",
@@ -108,9 +110,15 @@ Choose from:
 }
 ```
 
-## Peer Dependency
+## Peer dependencies
 
-- **TypeScript**: This config requires TypeScript version ^5.
+This package requires and assumes you already installed:
+
+```json
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+```
 
 ## License
 
