@@ -7,15 +7,14 @@
 
 <!-- vim-markdown-toc GFM -->
 
-* [Installation](#installation)
-* [Usage](#usage)
-* [Targets](#targets)
-    * [Common Configuration](#common-configuration)
-    * [Node](#node)
-    * [React](#react)
-    * [Ink](#ink)
-* [Peer dependencies](#peer-dependencies)
-* [License](#license)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Targets](#targets)
+  - [Common Configuration](#common-configuration)
+  - [Node](#node)
+  - [React](#react)
+  - [Ink](#ink)
+- [License](#license)
 
 <!-- vim-markdown-toc -->
 
@@ -24,6 +23,9 @@
 ```sh
 npm install --save-dev @asd14/ts-config typescript@^5
 ```
+
+> [!NOTE]  
+> `typescript` is a peerDependency
 
 ## Usage
 
@@ -108,16 +110,6 @@ All 3 targets extend a common set of rules:
   "lib": ["es2023", "dom"],
   "types": ["node"]
 }
-```
-
-## Peer dependencies
-
-This package requires and assumes you already installed:
-
-```json
-  "peerDependencies": {
-    "typescript": "^5"
-  },
 ```
 
 ## License
