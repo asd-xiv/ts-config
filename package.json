@@ -27,9 +27,9 @@
     "typescript": "^5 || ^6"
   },
   "devDependencies": {
-    "@asd14/prettier-config": "^1.2.0",
-    "@commitlint/cli": "^20.5.0",
-    "@commitlint/config-conventional": "^20.5.0",
+    "@asd14/prettier-config": "^1.4.0",
+    "@commitlint/cli": "^21.0.1",
+    "@commitlint/config-conventional": "^21.0.1",
     "@semantic-release/git": "^10.0.1",
     "conventional-changelog-conventionalcommits": "^9.3.1",
     "prettier": "^3.8.3",
