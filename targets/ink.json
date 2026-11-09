@@ -6,7 +6,7 @@
     "module": "esnext",
     "moduleResolution": "nodenext",
     "target": "esnext",
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "lib": ["es2023", "dom"],
     "types": ["node"]
   }

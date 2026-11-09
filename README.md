@@ -21,7 +21,7 @@
 ## Installation
 
 ```sh
-npm install --save-dev @asd14/ts-config typescript@^5
+npm install --save-dev @asd14/ts-config typescript@^6
 ```
 
 > [!NOTE]  
@@ -93,7 +93,7 @@ All 3 targets extend a common set of rules:
   "module": "esnext",
   "moduleResolution": "bundler",
   "target": "esnext",
-  "jsx": "preserve",
+  "jsx": "react-jsx",
   "lib": ["dom", "dom.iterable", "esnext"]
 }
 ```
@@ -106,7 +106,7 @@ All 3 targets extend a common set of rules:
   "module": "esnext",
   "moduleResolution": "nodenext",
   "target": "esnext",
-  "jsx": "preserve",
+  "jsx": "react-jsx",
   "lib": ["es2023", "dom"],
   "types": ["node"]
 }
